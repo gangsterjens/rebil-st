@@ -4,7 +4,7 @@ with st.sidebar:
   regnr = st.text_input('skriv inn regnr her')
 
 
-url = "https://kjoretoyoppslag.atlas.vegvesen.no/ws/no/vegvesen/kjoretoy/kjoretoyoppslag/v1/kjennemerkeoppslag/kjoretoy/{regnr}}".format(regnr)
+url = f"https://kjoretoyoppslag.atlas.vegvesen.no/ws/no/vegvesen/kjoretoyoppslag/v1/kjennemerkeoppslag/kjoretoy/{regnr}"
 data = requests.get(url)
 data = data.json()
 
