@@ -5,7 +5,7 @@ with st.sidebar:
   regnr = st.text_input('skriv inn regnr her')
 
 
-url = f"https://kjoretoyoppslag.atlas.vegvesen.no/ws/no/vegvesen/kjoretoyoppslag/v1/kjennemerkeoppslag/kjoretoy/{regnr}"
+url = f'https://kjoretoyoppslag.atlas.vegvesen.no/ws/no/vegvesen/kjoretoy/kjoretoyoppslag/v1/kjennemerkeoppslag/kjoretoy/{regnr}'
 st.markdown(url)
 data = requests.get(url)
 data = data.json()
