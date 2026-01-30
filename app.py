@@ -1,7 +1,7 @@
 import streamlit as st
 
 with st.sidebar:
-  st.text_input('skriv inn regnr her')
+  regnr = st.text_input('skriv inn regnr her')
 
 
 url = f"https://kjoretoyoppslag.atlas.vegvesen.no/ws/no/vegvesen/kjoretoy/kjoretoyoppslag/v1/kjennemerkeoppslag/kjoretoy/{regnr}}"
