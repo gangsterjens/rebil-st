@@ -6,6 +6,7 @@ with st.sidebar:
 
 
 url = f"https://kjoretoyoppslag.atlas.vegvesen.no/ws/no/vegvesen/kjoretoyoppslag/v1/kjennemerkeoppslag/kjoretoy/{regnr}"
+st.markdown(url)
 data = requests.get(url)
 data = data.json()
 
