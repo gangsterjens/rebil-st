@@ -1,4 +1,5 @@
 import streamlit as st
+import requests
 
 with st.sidebar:
   regnr = st.text_input('skriv inn regnr her')
