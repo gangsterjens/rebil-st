@@ -9,6 +9,8 @@ url = f"https://kjoretoyoppslag.atlas.vegvesen.no/ws/no/vegvesen/kjoretoyoppslag
 data = requests.get(url)
 data = data.json()
 
+st.write(data)
+
 last_checked = data['periodiskKjoretoykontroll']['sistKontrollert']
 next_check = data['periodiskKjoretoykontroll']['nesteKontroll']
 
